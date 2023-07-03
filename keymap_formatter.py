@@ -1,6 +1,7 @@
 from copy import copy
+import os
 
-config_path = "config.txt"
+config_path = os.path.join(os.path.dirname(__file__), "config.txt")
 
 
 def get_keymap_path() -> list[str]:
